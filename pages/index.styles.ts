@@ -123,13 +123,12 @@ export const ScrollSignal = styled(Image)``;
 
 export const FeaturesWrapper = styled.div`
   background: white;
-  padding: ;
 `;
 
 export const FeaturesContainer = styled.div`
   max-width: 1080px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 64px 16px;
 `;
 
 export const FeaturesTitle = styled.h2`
