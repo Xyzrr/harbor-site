@@ -34,6 +34,28 @@ const HeroVisual: React.FC<HeroVisualProps> = ({ className }) => {
           spaceFocused: true,
         }}
       />
+      <MapPlayer
+        playerSummary={{
+          name: "Veronica",
+          photoUrl: "/veronica.png",
+          color: Color("#5A58A9").rgbNumber(),
+          x: 40,
+          y: 90,
+          dir: Math.PI / 4,
+          spaceFocused: true,
+        }}
+      />
+      <MapPlayer
+        playerSummary={{
+          name: "Lavanya Shukla",
+          photoUrl: "/lavanya.png",
+          color: Color("#72A958").rgbNumber(),
+          x: 140,
+          y: 190,
+          dir: Math.PI,
+          spaceFocused: true,
+        }}
+      />
     </S.Wrapper>
   );
 };

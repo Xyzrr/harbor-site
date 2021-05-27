@@ -57,7 +57,9 @@ const Home: React.FC = () => {
                 So it's comfortable enough to leave on all day while you work.
               </S.IntroDescription>
             </S.IntroText>
-            <S.IntroImage />
+            <S.IntroImageWrapper>
+              <Image src="/desktop.png" width={2560} height={1532} />
+            </S.IntroImageWrapper>
           </S.IntroWrapper>
 
           <S.FeaturesWrapper>

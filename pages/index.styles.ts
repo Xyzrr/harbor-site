@@ -15,6 +15,7 @@ export const Header = styled.header`
   justify-content: space-between;
   background: rgba(26, 26, 26, 0.5);
   backdrop-filter: blur(16px);
+  z-index: 1;
 `;
 
 export const HeaderLogo = styled(Image)`
@@ -72,11 +73,11 @@ export const IntroText = styled.div`
   padding: 16px;
 `;
 
-export const IntroImage = styled.div`
+export const IntroImageWrapper = styled.div`
   height: 400px;
-  background: rgba(255, 255, 255, 0.2);
   margin-left: -32px;
   margin-right: -32px;
+  overflow: hidden;
 `;
 
 export const IntroTitle = styled.h2`

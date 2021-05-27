@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image";
 
 export const Wrapper = styled.div`
   color: white;
@@ -17,7 +18,6 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const AvatarImage = styled.img`
-  width: 100%;
-  height: 100%;
+export const AvatarImage = styled(Image).attrs({ layout: "fill" })`
+  object-fit: cover;
 `;
