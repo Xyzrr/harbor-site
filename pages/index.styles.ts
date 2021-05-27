@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Image from "next/image";
 
 export const Wrapper = styled.div`
@@ -34,7 +34,7 @@ export const HeroWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   max-width: 1080px;
-  margin: 0 auto;
+  margin: 64px auto;
 `;
 
 export const HeroText = styled.div`
@@ -46,11 +46,15 @@ export const HeroTitle = styled.h1`
   color: white;
   font-size: 96px;
   margin-bottom: 18px;
+  background: linear-gradient(to right, #7cd8ff, #b2e6fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 export const HeroSubTitle = styled.h2`
   color: white;
   font-size: 48px;
+  font-weight: 400;
 `;
 
 export const HeroImage = styled.div`
@@ -78,12 +82,43 @@ export const IntroImage = styled.div`
 export const IntroTitle = styled.h2`
   color: white;
   font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 8px;
 `;
 
-export const IntroSubTitle = styled.h3`
+export const IntroDescription = styled.p`
+  margin-top: 0;
   color: #ccc;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 `;
+
+const scrollSignalAnimation = keyframes`
+  0%   {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  30%  {
+      opacity: 0.6;
+      transform: translateY(-8px);
+  }
+  60%  {
+    opacity: 0.6;
+    transform: translateY(8px);
+}
+  100% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+`;
+
+export const ScrollSignalWrapper = styled.div`
+  margin-top: 56px;
+  animation: ${scrollSignalAnimation} 3s linear 0s infinite;
+`;
+
+export const ScrollSignal = styled(Image)``;
 
 export const FeaturesWrapper = styled.div`
   background: white;
@@ -123,7 +158,7 @@ export const FeatureTitle = styled.h3`
 
 export const FeatureDescription = styled.p`
   font-size: 15px;
-  color: #ccc;
+  color: #888;
 `;
 
 export const FinalCTAWrapper = styled.div`

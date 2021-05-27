@@ -20,7 +20,7 @@ export default function Home() {
         <S.Header>
           <S.HeaderLogo
             src="/logo_white.svg"
-            alt="Harbor"
+            alt="Harbor logo"
             width={311 / 3}
             height={63 / 3}
           />
@@ -32,17 +32,25 @@ export default function Home() {
             <S.HeroText>
               <S.HeroTitle>Be with your team.</S.HeroTitle>
               <S.HeroSubTitle>From anywhere.</S.HeroSubTitle>
+              <S.ScrollSignalWrapper>
+                <S.ScrollSignal
+                  src="/scroll_signal.svg"
+                  alt="Scroll signal"
+                  width={87}
+                  height={44}
+                />
+              </S.ScrollSignalWrapper>
             </S.HeroText>
             <S.HeroImage></S.HeroImage>
           </S.HeroWrapper>
           <S.IntroWrapper>
             <S.IntroText>
               <S.IntroTitle>A virtual space in your menu bar</S.IntroTitle>
-              <S.IntroSubTitle>
-                Harbor is design to be as small as possible, both in screen
-                space and CPU footprint. So it's comfortable enough to leave on
-                all day while you work.
-              </S.IntroSubTitle>
+              <S.IntroDescription>
+                Harbor is designed to be as small as possible, both in screen
+                space and CPU footprint. <br />
+                So it's comfortable enough to leave on all day while you work.
+              </S.IntroDescription>
             </S.IntroText>
             <S.IntroImage />
           </S.IntroWrapper>
