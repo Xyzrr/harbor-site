@@ -11,7 +11,7 @@ const DownloadPage: React.FC<DownloadPageProps> = ({ className }) => {
       <S.Container>
         <a href="/">
           <S.HeaderLogo
-            src="/logo_dark_colored.svg"
+            src="/logo_light_colored.svg"
             alt="Harbor logo"
             width={311 / 2}
             height={63 / 2}

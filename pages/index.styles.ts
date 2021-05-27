@@ -33,15 +33,27 @@ export const Main = styled.main`
 `;
 
 export const HeroWrapper = styled.div`
+  padding: 0 16px;
+`;
+
+export const HeroContainer = styled.div`
   display: flex;
   justify-content: space-between;
   max-width: 1080px;
   margin: 64px auto;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-top: 0;
+  }
 `;
 
 export const HeroText = styled.div`
   width: 600px;
   padding: 16px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const HeroTitle = styled.h1`
@@ -51,20 +63,30 @@ export const HeroTitle = styled.h1`
   background: linear-gradient(to right, #7cd8ff, #b2e6fd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media (max-width: 768px) {
+    font-size: 64px;
+  }
 `;
 
 export const HeroSubTitle = styled.h2`
   color: white;
   font-size: 48px;
   font-weight: 400;
+  @media (max-width: 768px) {
+    font-size: 32px;
+    margin-bottom: 64px;
+  }
 `;
 
 export const StyledHeroVisual = styled(HeroVisual)`
-  margin-top: 128px;
   margin-right: 16px;
 `;
 
 export const IntroWrapper = styled.div`
+  padding: 0 16px;
+`;
+
+export const IntroContainer = styled.div`
   max-width: 1080px;
   margin: 0 auto;
 `;
@@ -117,18 +139,22 @@ const scrollSignalAnimation = keyframes`
 export const ScrollSignalWrapper = styled.div`
   margin-top: 56px;
   animation: ${scrollSignalAnimation} 3s linear 0s infinite;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const ScrollSignal = styled(Image)``;
 
 export const FeaturesWrapper = styled.div`
   background: white;
+  padding: 0 16px;
 `;
 
 export const FeaturesContainer = styled.div`
   max-width: 1080px;
   margin: 0 auto;
-  padding: 64px 16px;
+  padding: 64px 0;
 `;
 
 export const FeaturesTitle = styled.h2`
@@ -138,11 +164,20 @@ export const FeaturesTitle = styled.h2`
 
 export const FeaturesList = styled.div`
   display: flex;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const FeatureWrapper = styled.div`
   padding: 16px;
   width: 270px;
+  @media (max-width: 768px) {
+    width: 50%;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const FeatureIcon = styled.div`
@@ -167,6 +202,7 @@ export const FinalCTAWrapper = styled.div`
 
 export const Footer = styled.footer`
   background: #555;
+  padding: 0 16px;
 `;
 
 export const FooterContainer = styled.div`

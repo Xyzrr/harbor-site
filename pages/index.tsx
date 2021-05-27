@@ -2,7 +2,6 @@ import * as S from "./index.styles";
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import HeroVisual from "../components/HeroVisual";
 
 const Home: React.FC = () => {
   return (
@@ -34,32 +33,36 @@ const Home: React.FC = () => {
 
         <S.Main>
           <S.HeroWrapper>
-            <S.HeroText>
-              <S.HeroTitle>Be with your team.</S.HeroTitle>
-              <S.HeroSubTitle>From anywhere.</S.HeroSubTitle>
-              <S.ScrollSignalWrapper>
-                <S.ScrollSignal
-                  src="/scroll_signal.svg"
-                  alt="Scroll signal"
-                  width={87}
-                  height={44}
-                />
-              </S.ScrollSignalWrapper>
-            </S.HeroText>
-            <S.StyledHeroVisual />
+            <S.HeroContainer>
+              <S.HeroText>
+                <S.HeroTitle>Be with your team.</S.HeroTitle>
+                <S.HeroSubTitle>From anywhere.</S.HeroSubTitle>
+                <S.ScrollSignalWrapper>
+                  <S.ScrollSignal
+                    src="/scroll_signal.svg"
+                    alt="Scroll signal"
+                    width={87}
+                    height={44}
+                  />
+                </S.ScrollSignalWrapper>
+              </S.HeroText>
+              <S.StyledHeroVisual />
+            </S.HeroContainer>
           </S.HeroWrapper>
           <S.IntroWrapper>
-            <S.IntroText>
-              <S.IntroTitle>A virtual space in your menu bar</S.IntroTitle>
-              <S.IntroDescription>
-                Harbor is designed to be as small as possible, both in screen
-                space and CPU footprint. <br />
-                So it's comfortable enough to leave on all day while you work.
-              </S.IntroDescription>
-            </S.IntroText>
-            <S.IntroImageWrapper>
-              <Image src="/desktop.png" width={2560} height={1532} />
-            </S.IntroImageWrapper>
+            <S.IntroContainer>
+              <S.IntroText>
+                <S.IntroTitle>A virtual space in your menu bar</S.IntroTitle>
+                <S.IntroDescription>
+                  Harbor is designed to be as small as possible, both in screen
+                  space and CPU footprint. <br />
+                  So it's comfortable enough to leave on all day while you work.
+                </S.IntroDescription>
+              </S.IntroText>
+              <S.IntroImageWrapper>
+                <Image src="/desktop.png" width={2560} height={1532} />
+              </S.IntroImageWrapper>
+            </S.IntroContainer>
           </S.IntroWrapper>
 
           <S.FeaturesWrapper>
