@@ -1,9 +1,9 @@
 import * as S from "./index.styles";
-
+import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <>
       <Head>
@@ -24,7 +24,7 @@ export default function Home() {
             width={311 / 3}
             height={63 / 3}
           />
-          <S.HeaderCTA>Get started</S.HeaderCTA>
+          <S.HeaderCTA href="download">Get started</S.HeaderCTA>
         </S.Header>
 
         <S.Main>
@@ -111,4 +111,6 @@ export default function Home() {
       </S.Wrapper>
     </>
   );
-}
+};
+
+export default Home;

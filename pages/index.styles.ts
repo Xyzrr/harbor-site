@@ -166,7 +166,7 @@ export const FinalCTAWrapper = styled.div`
 `;
 
 export const Footer = styled.footer`
-  background: #666;
+  background: #555;
 `;
 
 export const FooterContainer = styled.div`
