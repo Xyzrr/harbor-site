@@ -305,7 +305,7 @@ const Home: React.FC = () => {
                   </FeatureDescription>
                 </FeatureWrapper>
                 <FeatureWrapper>
-                  <Image src="/focusvg" width={50} height={50} />
+                  <Image src="/focus.svg" width={50} height={50} />
 
                   <FeatureTitle>Focus mode</FeatureTitle>
                   <FeatureDescription>
