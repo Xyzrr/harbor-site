@@ -67,7 +67,7 @@ const Home: React.FC = () => {
               <S.FeaturesTitle>Built for productivity</S.FeaturesTitle>
               <S.FeaturesList>
                 <S.FeatureWrapper>
-                  <S.FeatureIcon />
+                  <Image src="/screenshare.svg" width={50} height={50} />
                   <S.FeatureTitle>Interactive screen sharing</S.FeatureTitle>
                   <S.FeatureDescription>
                     See each other's cursors while screen sharing, like pointing
@@ -75,7 +75,8 @@ const Home: React.FC = () => {
                   </S.FeatureDescription>
                 </S.FeatureWrapper>
                 <S.FeatureWrapper>
-                  <S.FeatureIcon />
+                  <Image src="/whisper.svg" width={50} height={50} />
+
                   <S.FeatureTitle>Directed conversations</S.FeatureTitle>
                   <S.FeatureDescription>
                     Whisper to an individual without leaving the group. Good for
@@ -84,7 +85,8 @@ const Home: React.FC = () => {
                   </S.FeatureDescription>
                 </S.FeatureWrapper>
                 <S.FeatureWrapper>
-                  <S.FeatureIcon />
+                  <Image src="/focus.svg" width={50} height={50} />
+
                   <S.FeatureTitle>Focus mode</S.FeatureTitle>
                   <S.FeatureDescription>
                     Disable communications on a timer when you need to crank
@@ -92,7 +94,8 @@ const Home: React.FC = () => {
                   </S.FeatureDescription>
                 </S.FeatureWrapper>
                 <S.FeatureWrapper>
-                  <S.FeatureIcon />
+                  <Image src="/pulse.svg" width={50} height={50} />
+
                   <S.FeatureTitle>A team pulse</S.FeatureTitle>
                   <S.FeatureDescription>
                     See what work apps your teammates are on, to get a better
