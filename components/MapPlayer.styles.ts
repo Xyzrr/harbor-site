@@ -12,8 +12,8 @@ export const LiquidUserAvatar = styled(UserAvatar)`
 `;
 
 export const Pointer = styled.div`
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   background: green;
   position: absolute;
   top: 50%;
@@ -27,10 +27,10 @@ export const Wrapper = styled.div<{
   busy?: boolean;
 }>`
   position: absolute;
-  width: 30px;
-  height: 30px;
-  left: -15px;
-  top: -15px;
+  width: 44px;
+  height: 44px;
+  left: -22px;
+  top: -22px;
   border: 2px solid ${(props) => props.color};
   background: ${(props) => props.color};
   border-radius: 50%;
@@ -63,5 +63,6 @@ export const BusyIcon = styled(Icon)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 16px;
+  font-size: 24px;
+  opacity: 0.7;
 `;

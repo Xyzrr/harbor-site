@@ -52,7 +52,7 @@ const MapPlayer: React.FC<MapPlayerProps> = React.memo(function MapPlayer({
       {playerSummary.spaceFocused && (
         <S.Pointer
           style={{
-            transform: `translate(-50%, -50%) rotate(${interpolableDir}deg) translateX(14px) rotate(45deg)`,
+            transform: `translate(-50%, -50%) rotate(${interpolableDir}deg) translateX(20px) rotate(45deg)`,
           }}
         />
       )}

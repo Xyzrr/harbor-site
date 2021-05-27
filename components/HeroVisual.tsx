@@ -27,10 +27,21 @@ const HeroVisual: React.FC<HeroVisualProps> = ({ className }) => {
         playerSummary={{
           name: "Carey Phelps",
           photoUrl: "/carey.png",
-          color: Color("#a9585d").rgbNumber(),
-          x: 40,
-          y: 10,
-          dir: 0,
+          color: Color("#E6FF4F").rgbNumber(),
+          x: 30,
+          y: -20,
+          dir: 0.6 * Math.PI,
+          spaceFocused: true,
+        }}
+      />
+      <MapPlayer
+        playerSummary={{
+          name: "Anni",
+          photoUrl: "/anni.png",
+          color: Color("#589AA9").rgbNumber(),
+          x: 0,
+          y: 50,
+          dir: 1.6 * Math.PI,
           spaceFocused: true,
         }}
       />
@@ -38,21 +49,44 @@ const HeroVisual: React.FC<HeroVisualProps> = ({ className }) => {
         playerSummary={{
           name: "Veronica",
           photoUrl: "/veronica.png",
-          color: Color("#5A58A9").rgbNumber(),
-          x: 40,
-          y: 90,
-          dir: Math.PI / 4,
+          color: Color("#72A958").rgbNumber(),
+          x: 350,
+          y: 40,
+          dir: Math.PI,
           spaceFocused: true,
+          busyType: "default",
         }}
       />
       <MapPlayer
         playerSummary={{
           name: "Lavanya Shukla",
           photoUrl: "/lavanya.png",
+          color: Color("#5A58A9").rgbNumber(),
+          x: 100,
+          y: 250,
+          dir: 1.7 * Math.PI,
+          spaceFocused: true,
+        }}
+      />
+      <MapPlayer
+        playerSummary={{
+          name: "Haruka",
+          photoUrl: "/haruka.png",
           color: Color("#72A958").rgbNumber(),
-          x: 140,
-          y: 190,
-          dir: Math.PI,
+          x: 178,
+          y: 265,
+          dir: 1.3 * Math.PI,
+          spaceFocused: true,
+        }}
+      />
+      <MapPlayer
+        playerSummary={{
+          name: "Tom",
+          photoUrl: "/tom.png",
+          color: Color("#A9585D").rgbNumber(),
+          x: 195,
+          y: 195,
+          dir: 0.8 * Math.PI,
           spaceFocused: true,
         }}
       />

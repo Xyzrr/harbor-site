@@ -16,7 +16,7 @@ const Home: React.FC = () => {
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/icon?family=Material+Icons_Outlined"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
           rel="stylesheet"
         ></link>
       </Head>
