@@ -16,6 +16,10 @@ const Home: React.FC = () => {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons_Outlined"
+          rel="stylesheet"
+        ></link>
       </Head>
       <S.Wrapper>
         <S.Header>
