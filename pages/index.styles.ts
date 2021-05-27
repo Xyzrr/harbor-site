@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import Image from "next/image";
+import HeroVisual from "../components/HeroVisual";
 
 export const Wrapper = styled.div`
   background: rgba(26, 26, 26);
@@ -57,10 +58,9 @@ export const HeroSubTitle = styled.h2`
   font-weight: 400;
 `;
 
-export const HeroImage = styled.div`
-  background: rgba(255, 255, 255, 0.2);
-  width: 400px;
-  height: 400px;
+export const StyledHeroVisual = styled(HeroVisual)`
+  margin-top: 128px;
+  margin-right: 16px;
 `;
 
 export const IntroWrapper = styled.div`

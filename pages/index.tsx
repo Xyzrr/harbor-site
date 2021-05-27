@@ -2,6 +2,7 @@ import * as S from "./index.styles";
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
+import HeroVisual from "../components/HeroVisual";
 
 const Home: React.FC = () => {
   return (
@@ -41,7 +42,7 @@ const Home: React.FC = () => {
                 />
               </S.ScrollSignalWrapper>
             </S.HeroText>
-            <S.HeroImage></S.HeroImage>
+            <S.StyledHeroVisual />
           </S.HeroWrapper>
           <S.IntroWrapper>
             <S.IntroText>
