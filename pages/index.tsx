@@ -51,6 +51,7 @@ export const HeroContainer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     margin-top: 0;
+    margin-bottom: 96px;
   }
 `;
 
@@ -86,6 +87,9 @@ export const HeroSubTitle = styled.h2`
 
 export const StyledHeroVisual = styled(HeroVisual)`
   margin-right: 16px;
+  @media (max-width: 768px) {
+    transform: scale(0.8);
+  }
 `;
 
 export const IntroWrapper = styled.div`
@@ -106,6 +110,13 @@ export const IntroImageWrapper = styled.div`
   margin-left: -32px;
   margin-right: -32px;
   overflow: hidden;
+  @media (max-width: 1144px) {
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    margin-left: -120%;
+    margin-right: 16px;
+  }
 `;
 
 export const IntroTitle = styled.h2`
@@ -166,6 +177,9 @@ export const FeaturesContainer = styled.div`
   position: relative;
   transform: skewY(-4deg);
   padding: 80px 0 128px;
+  @media (max-width: 768px) {
+    padding-top: 48px;
+  }
 `;
 
 export const VerticalLines = styled.div`
