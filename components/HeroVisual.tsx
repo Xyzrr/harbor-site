@@ -50,10 +50,10 @@ const HeroVisual: React.FC<HeroVisualProps> = ({ className }) => {
           name: "Veronica",
           photoUrl: "/veronica.png",
           color: Color("#72A958").rgbNumber(),
-          x: 350,
+          x: 330,
           y: 40,
           dir: Math.PI,
-          spaceFocused: true,
+          spaceFocused: false,
           busyType: "default",
         }}
       />

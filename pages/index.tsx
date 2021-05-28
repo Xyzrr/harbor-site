@@ -40,6 +40,7 @@ export const Main = styled.main`
 
 export const HeroWrapper = styled.div`
   padding: 0 16px;
+  overflow: hidden;
 `;
 
 export const HeroContainer = styled.div`
