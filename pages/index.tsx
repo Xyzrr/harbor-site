@@ -243,6 +243,15 @@ export const FeatureIcon = styled.div`
 export const FeatureTitle = styled.h3`
   font-size: 15px;
   font-weight: 600;
+  position: relative;
+`;
+
+export const FeatureTitleAccent = styled.div`
+  height: 18px;
+  width: 1px;
+  background: rgb(67, 138, 208);
+  position: absolute;
+  left: -16px;
 `;
 
 export const FeatureDescription = styled.p`
@@ -385,7 +394,10 @@ const Home: React.FC = () => {
               <FeaturesList>
                 <FeatureWrapper>
                   <Image src="/screenshare.svg" width={50} height={50} />
-                  <FeatureTitle>Interactive screen sharing</FeatureTitle>
+                  <FeatureTitle>
+                    <FeatureTitleAccent />
+                    Interactive screen sharing
+                  </FeatureTitle>
                   <FeatureDescription>
                     See each other's cursors while screen sharing, like pointing
                     with fingers in real life.
@@ -393,8 +405,10 @@ const Home: React.FC = () => {
                 </FeatureWrapper>
                 <FeatureWrapper>
                   <Image src="/whisper.svg" width={50} height={50} />
-
-                  <FeatureTitle>Directed conversations</FeatureTitle>
+                  <FeatureTitle>
+                    <FeatureTitleAccent />
+                    Directed conversations
+                  </FeatureTitle>
                   <FeatureDescription>
                     Whisper to an individual without leaving the group. Good for
                     pulling someone aside or asking a question without
@@ -403,8 +417,10 @@ const Home: React.FC = () => {
                 </FeatureWrapper>
                 <FeatureWrapper>
                   <Image src="/focus.svg" width={50} height={50} />
-
-                  <FeatureTitle>Focus mode</FeatureTitle>
+                  <FeatureTitle>
+                    <FeatureTitleAccent />
+                    Focus mode
+                  </FeatureTitle>
                   <FeatureDescription>
                     Disable communications on a timer when you need to crank
                     something out in silence.
@@ -413,7 +429,9 @@ const Home: React.FC = () => {
                 <FeatureWrapper>
                   <Image src="/pulse.svg" width={50} height={50} />
 
-                  <FeatureTitle>A team pulse</FeatureTitle>
+                  <FeatureTitle>
+                    <FeatureTitleAccent />A team pulse
+                  </FeatureTitle>
                   <FeatureDescription>
                     See what work apps your teammates are on, to get a better
                     sense of when you can interrupt.
