@@ -7,15 +7,19 @@ export const Wrapper = styled.div`
 export const DotGrid = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
 `;
 
 export const DotRow = styled.div`
   display: flex;
-  gap: 16px;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 `;
 
 export const Dot = styled.div`
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
   width: 4px;
   height: 4px;
   border-radius: 50%;
