@@ -72,7 +72,7 @@ export const HeroTitle = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @media (max-width: 768px) {
-    font-size: 64px;
+    font-size: 60px;
   }
 `;
 
@@ -169,6 +169,9 @@ export const FeaturesWrapper = styled.div`
   padding: 0 16px;
   position: relative;
   transform: skewY(4deg);
+  @media (max-width: 600px) {
+    margin-top: -120px;
+  }
 `;
 
 export const FeaturesContainer = styled.div`
