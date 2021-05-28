@@ -317,7 +317,7 @@ export const FinalCTAButton = styled.a`
 `;
 
 export const Footer = styled.footer`
-  background: #555;
+  background: #292929;
   padding: 0 16px;
 `;
 
@@ -329,8 +329,12 @@ export const FooterContainer = styled.div`
   justify-content: space-between;
 `;
 
+export const FooterLogo = styled(Image)`
+  opacity: 0.5;
+`;
+
 export const FooterText = styled.div`
-  color: #ccc;
+  color: #888;
   font-size: 14px;
 `;
 
@@ -464,7 +468,7 @@ const Home: React.FC = () => {
         </Main>
         <Footer>
           <FooterContainer>
-            <HeaderLogo
+            <FooterLogo
               src="/logo_white.svg"
               alt="Harbor"
               width={311 / 3}
