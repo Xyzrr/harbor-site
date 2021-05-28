@@ -348,8 +348,11 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Harbor</title>
-        <meta name="description" content="Be with your team, from anywhere." />
+        <title>Harbor | Be with your team. From anywhere.</title>
+        <meta
+          name="description"
+          content="A virtual office that lives in your menu bar. Be with your team, from anywhere."
+        />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
