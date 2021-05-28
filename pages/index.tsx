@@ -28,7 +28,7 @@ export const HeaderCTA = styled.a`
   color: white;
   font-weight: 600;
   letter-spacing: 2px;
-  margin-right: 8px;
+  margin-right: 4px;
   &:hover {
     filter: brightness(0.8);
   }
@@ -116,7 +116,6 @@ export const IntroImageWrapper = styled.div`
   }
   @media (max-width: 768px) {
     margin-left: -120%;
-    margin-right: 16px;
   }
 `;
 
@@ -194,11 +193,13 @@ export const VerticalLines = styled.div`
 
 export const VerticalLine = styled.div`
   position: absolute;
-  left: 0;
   top: 0;
   width: 1px;
   height: 100%;
   background: rgba(0, 0, 0, 0.08);
+  &:first-child {
+    left: 0;
+  }
   &:nth-child(2) {
     left: 25%;
   }
@@ -209,7 +210,7 @@ export const VerticalLine = styled.div`
     left: 75%;
   }
   &:nth-child(5) {
-    left: 100%;
+    right: 0;
   }
   @media (max-width: 768px) {
     &:nth-child(2n) {
