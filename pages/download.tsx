@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
+import Head from "next/head";
 
 export const Wrapper = styled.div`
   background: rgba(26, 26, 26);
@@ -24,8 +25,8 @@ export const HeaderLogo = styled(Image)`
 export const Title = styled.h1`
   font-size: 56px;
   margin-bottom: 52px;
-  color: white;
-  font-weight: 600;
+  color: #ddd;
+  font-weight: 400;
 `;
 
 export const PlatformLogoWrapper = styled.div`
@@ -58,32 +59,44 @@ export interface DownloadPageProps {
 
 const DownloadPage: React.FC<DownloadPageProps> = ({ className }) => {
   return (
-    <Wrapper className={className}>
-      <Container>
-        <a href="/">
-          <HeaderLogo
-            src="/logo_light_colored.svg"
-            alt="Harbor logo"
-            width={311 / 2}
-            height={63 / 2}
-          />
-        </a>
-        <Title>Download Harbor</Title>
-        <DownloadButton
-          href="https://github.com/Xyzrr/harbor/releases/download/v0.3.0/Harbor-0.3.0.dmg"
-          download
-        >
-          <PlatformLogoWrapper>
-            <PlatformLogo
-              src="/platform-logo-macos.svg"
-              width={26}
-              height={26}
+    <>
+      <Head>
+        <title>Download Harbor</title>
+        <meta name="description" content="Be with your team, from anywhere." />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+      <Wrapper className={className}>
+        <Container>
+          <a href="/">
+            <HeaderLogo
+              src="/logo_light_colored.svg"
+              alt="Harbor logo"
+              width={311 / 2}
+              height={63 / 2}
             />
-          </PlatformLogoWrapper>
-          Download for MacOS
-        </DownloadButton>
-      </Container>
-    </Wrapper>
+          </a>
+          <Title>Download Harbor</Title>
+          <DownloadButton
+            href="https://github.com/Xyzrr/harbor/releases/download/v0.3.0/Harbor-0.3.0.dmg"
+            download
+          >
+            <PlatformLogoWrapper>
+              <PlatformLogo
+                src="/platform-logo-macos.svg"
+                width={26}
+                height={26}
+              />
+            </PlatformLogoWrapper>
+            Download for MacOS
+          </DownloadButton>
+        </Container>
+      </Wrapper>
+    </>
   );
 };
 

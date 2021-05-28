@@ -13,7 +13,7 @@ export const Header = styled.header`
   display: flex;
   position: sticky;
   top: 0;
-  padding: 16px;
+  padding: 24px;
   justify-content: space-between;
   background: rgba(26, 26, 26, 0.5);
   backdrop-filter: blur(16px);
@@ -28,6 +28,10 @@ export const HeaderCTA = styled.a`
   color: white;
   font-weight: 600;
   letter-spacing: 2px;
+  margin-right: 8px;
+  &:hover {
+    filter: brightness(0.8);
+  }
 `;
 
 export const Main = styled.main`
@@ -162,6 +166,7 @@ export const FeaturesContainer = styled.div`
 export const FeaturesTitle = styled.h2`
   padding: 16px;
   font-size: 32px;
+  font-weight: 600;
 `;
 
 export const FeaturesList = styled.div`
@@ -200,6 +205,42 @@ export const FeatureDescription = styled.p`
 
 export const FinalCTAWrapper = styled.div`
   height: 400px;
+  padding: 0 16px;
+`;
+
+export const FinalCTAContainer = styled.div`
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 16px;
+`;
+
+export const FinalCTATitle = styled.h2`
+  color: #eee;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+`;
+
+export const FinalCTAButton = styled.a`
+  display: block;
+  width: fit-content;
+  background: linear-gradient(to right, #7cd8ff, #b2e6fd);
+  padding: 16px 40px;
+  color: black;
+  border-radius: 16px;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  filter: brightness(1.05);
+  &:hover {
+    filter: brightness(1.1);
+  }
 `;
 
 export const Footer = styled.footer`
@@ -325,7 +366,12 @@ const Home: React.FC = () => {
               </FeaturesList>
             </FeaturesContainer>
           </FeaturesWrapper>
-          <FinalCTAWrapper></FinalCTAWrapper>
+          <FinalCTAWrapper>
+            <FinalCTAContainer>
+              <FinalCTATitle>Free, for now.</FinalCTATitle>
+              <FinalCTAButton href="download">Get started</FinalCTAButton>
+            </FinalCTAContainer>
+          </FinalCTAWrapper>
         </Main>
         <Footer>
           <FooterContainer>
