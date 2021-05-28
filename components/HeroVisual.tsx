@@ -49,7 +49,7 @@ const HeroVisual: React.FC<HeroVisualProps> = ({ className }) => {
         playerSummary={{
           name: "Veronica",
           photoUrl: "/veronica.png",
-          color: Color("#72A958").rgbNumber(),
+          color: Color("#EA85F3").rgbNumber(),
           x: 330,
           y: 40,
           dir: Math.PI,
