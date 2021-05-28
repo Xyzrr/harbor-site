@@ -241,7 +241,7 @@ export const FeatureIcon = styled.div`
 `;
 
 export const FeatureTitle = styled.h3`
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   position: relative;
 `;
@@ -396,7 +396,7 @@ const Home: React.FC = () => {
                   <Image src="/screenshare.svg" width={50} height={50} />
                   <FeatureTitle>
                     <FeatureTitleAccent />
-                    Interactive screen sharing
+                    Interactive screen share
                   </FeatureTitle>
                   <FeatureDescription>
                     See each other's cursors while screen sharing, like pointing
