@@ -152,24 +152,62 @@ export const ScrollSignalWrapper = styled.div`
 
 export const ScrollSignal = styled(Image)``;
 
-export const FeaturesDiagonal = styled.div`
-  background: white;
-  height: 400px;
-  transform: skewY(4deg);
-  margin-top: -64px;
-  margin-bottom: -320px;
-`;
-
 export const FeaturesWrapper = styled.div`
+  margin: -80px 0 -64px;
   background: white;
   padding: 0 16px;
   position: relative;
+  transform: skewY(4deg);
 `;
 
 export const FeaturesContainer = styled.div`
   max-width: 1080px;
   margin: 0 auto;
-  padding-bottom: 64px;
+  position: relative;
+  transform: skewY(-4deg);
+  padding: 80px 0 128px;
+`;
+
+export const VerticalLines = styled.div`
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform: skewY(4deg);
+`;
+
+export const VerticalLine = styled.div`
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.08);
+  &:nth-child(2) {
+    left: 25%;
+  }
+  &:nth-child(3) {
+    left: 50%;
+  }
+  &:nth-child(4) {
+    left: 75%;
+  }
+  &:nth-child(5) {
+    left: 100%;
+  }
+  @media (max-width: 768px) {
+    &:nth-child(2n) {
+      display: none;
+    }
+  }
+  @media (max-width: 600px) {
+    display: none;
+    &:first-child,
+    &:last-child {
+      display: block;
+    }
+  }
 `;
 
 export const FeaturesTitle = styled.h2`
@@ -215,6 +253,8 @@ export const FeatureDescription = styled.p`
 export const FinalCTAWrapper = styled.div`
   height: 400px;
   padding: 0 16px;
+  position: relative;
+  background: rgb(26, 26, 26);
 `;
 
 export const FinalCTAContainer = styled.div`
@@ -332,9 +372,15 @@ const Home: React.FC = () => {
             </IntroContainer>
           </IntroWrapper>
 
-          <FeaturesDiagonal />
           <FeaturesWrapper>
             <FeaturesContainer>
+              <VerticalLines>
+                <VerticalLine />
+                <VerticalLine />
+                <VerticalLine />
+                <VerticalLine />
+                <VerticalLine />
+              </VerticalLines>
               <FeaturesTitle>Built for productivity</FeaturesTitle>
               <FeaturesList>
                 <FeatureWrapper>
