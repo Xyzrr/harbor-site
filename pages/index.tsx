@@ -152,20 +152,29 @@ export const ScrollSignalWrapper = styled.div`
 
 export const ScrollSignal = styled(Image)``;
 
+export const FeaturesDiagonal = styled.div`
+  background: white;
+  height: 400px;
+  transform: skewY(4deg);
+  margin-top: -64px;
+  margin-bottom: -320px;
+`;
+
 export const FeaturesWrapper = styled.div`
   background: white;
   padding: 0 16px;
+  position: relative;
 `;
 
 export const FeaturesContainer = styled.div`
   max-width: 1080px;
   margin: 0 auto;
-  padding: 64px 0;
+  padding-bottom: 64px;
 `;
 
 export const FeaturesTitle = styled.h2`
   padding: 16px;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 600;
 `;
 
@@ -323,6 +332,7 @@ const Home: React.FC = () => {
             </IntroContainer>
           </IntroWrapper>
 
+          <FeaturesDiagonal />
           <FeaturesWrapper>
             <FeaturesContainer>
               <FeaturesTitle>Built for productivity</FeaturesTitle>
