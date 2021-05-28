@@ -70,8 +70,8 @@ const HeroVisual: React.FC<HeroVisualProps> = ({ className }) => {
       />
       <MapPlayer
         playerSummary={{
-          name: "Haruka",
-          photoUrl: "/haruka.png",
+          name: "Axel",
+          photoUrl: "/axel.png",
           color: Color("#72A958").rgbNumber(),
           x: 178,
           y: 265,
