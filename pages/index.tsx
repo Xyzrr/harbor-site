@@ -107,7 +107,6 @@ export const IntroText = styled.div`
 `;
 
 export const IntroImageWrapper = styled.div`
-  height: 400px;
   margin-left: -32px;
   margin-right: -32px;
   overflow: hidden;
@@ -164,13 +163,16 @@ export const ScrollSignalWrapper = styled.div`
 export const ScrollSignal = styled(Image)``;
 
 export const FeaturesWrapper = styled.div`
-  margin: -80px 0 -64px;
+  margin: -280px 0 -64px;
   background: white;
   padding: 0 16px;
   position: relative;
   transform: skewY(4deg);
+  @media (max-width: 768px) {
+    margin-top: -480px;
+  }
   @media (max-width: 600px) {
-    margin-top: -120px;
+    margin-top: -200px;
   }
 `;
 
