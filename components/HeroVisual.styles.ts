@@ -18,5 +18,6 @@ export const DotRow = styled.div`
 export const Dot = styled.div`
   width: 4px;
   height: 4px;
+  border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
 `;
