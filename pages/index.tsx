@@ -440,7 +440,7 @@ const Home: React.FC = () => {
                   <FeatureDescription>
                     Whisper to an individual without leaving the group. Good for
                     pulling someone aside or asking a question without
-                    disturbing the other
+                    disturbing the others.
                   </FeatureDescription>
                 </FeatureWrapper>
                 <FeatureWrapper>
