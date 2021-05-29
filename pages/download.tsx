@@ -82,7 +82,7 @@ const DownloadPage: React.FC<DownloadPageProps> = ({ className }) => {
           </a>
           <Title>Download Harbor</Title>
           <DownloadButton
-            href="https://github.com/Xyzrr/harbor/releases/download/v0.3.1/Harbor-0.3.1.dmg"
+            href="https://github.com/Xyzrr/harbor/releases/download/v0.3.2/Harbor-0.3.2.dmg"
             download
           >
             <PlatformLogoWrapper>
